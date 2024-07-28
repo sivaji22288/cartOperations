@@ -18,14 +18,14 @@ To set up the project, follow these steps:
 
 1. Clone the repository from GIT `https://github.com/sivaji22288/cartOperations.git` to your local machine.
 2. Navigate to the project directory.
-3. Run `./gradle clean build` to build the project.
+3. Run `./gradlew clean build` to build the project.
 
 ## Running the Application
 
 To run the application, follow these steps:
 
 1. Navigate to the project directory.
-2. Run `./gradle bootRun` to start the application.
+2. Run `./gradlew bootRun` to start the application.
 
 ## Testing the Application
 
