@@ -34,6 +34,22 @@ To test the application, follow these steps:
 1. Navigate to the project directory.
 2. Run `./gradle test` to execute the tests.
 
+## SonarQube Report
+
+To generate the SonarQube report, follow these steps:
+
+1. Navigate to the project directory.
+2. if you are running the SonarQube locally, then run the below command to generate the SonarQube report.
+   `./gradlew test jacocoTestReport sonarqube -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=admin`
+3. Open the browser and navigate to `http://localhost:9000/` to view the SonarQube report.
+4. Login with the credentials `admin/admin`.
+5. Navigate to the project and view the report.
+6. You can also view the report by running the below command.
+   `./gradlew sonarqube -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=admin`
+7. If SonarQube is not running locally, then you can view the report by running the below command.
+   `./gradlew test jacocoTestReport sonarqube`
+8. Navigate to `http://localhost:63342/cartOperations/build/jacocoHtml/index.html?_ijt=uhf68641g5bsg0ci4io0gthg1q&_ij_reload=RELOAD_ON_SAVE` to view the Jacoco report.
+
 ## Contributing to the Project
 
 To contribute to this project, follow these steps:
@@ -74,4 +90,3 @@ The following guides illustrate how to use some features concretely:
 These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
-
