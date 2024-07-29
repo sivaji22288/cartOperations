@@ -34,6 +34,12 @@ To test the application, follow these steps:
 1. Navigate to the project directory.
 2. Run `gradlew test` to execute the tests.
 
+## Swagger Documentation
+
+To View the swagger documentation, fallow these steps:
+1. Launch the application.
+2. Open any browser and navigate to `http://localhost:9388/swagger-ui/index.html` 
+
 ## SonarQube Report
 
 To generate the SonarQube report, follow these steps:
